@@ -1,0 +1,26 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.mindgarden.app'
+    compileSdk 36
+
+    buildFeatures {
+        viewBinding true
+    }
+
+    defaultConfig {
+        applicationId 'com.mindgarden.app'
+        minSdk 23
+        targetSdk 35
+        versionCode 1
+        versionName '1.0'
+    }
+}
+
+dependencies {
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.1@aar'
+    implementation 'androidx.constraintlayout:constraintlayout-solver:2.0.1'
+    implementation 'androidx.core:core:1.13.1@aar'
+}
